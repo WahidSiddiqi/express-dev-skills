@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Express Skills</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+</head>
+
+<body>
+    <h1>Skills</h1>
+    <%= skill.skillDescription %>
+
+        <form method="POST" action="/skills/delete?_method=DELETE">
+            <input name="id" type="hidden" value="<%= skill.id %>">
+            <button type="submit">Delete skill</button>
+        </form>
+</body>
+
+</html>
